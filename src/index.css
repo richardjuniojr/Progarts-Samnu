@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  background-image: url(https://img1.picmix.com/output/stamp/normal/5/1/4/8/2448415_a0e85.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: clamp(5rem, -0.4688rem + 17.5vw, 9.375rem);
+  line-height: 1;
+}
+
+.hero-background {
+  background-image: radial-gradient(#2d7a2e 1.45px, #fffef8 1.45px);
+  background-size: 29px 29px;
+  opacity: 0.3;
+  animation: movePolkaDots 5s linear infinite;
+}
+
+@keyframes movePolkaDots {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 58px 58px;
+  }
+}
